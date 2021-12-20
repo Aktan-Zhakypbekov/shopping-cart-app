@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-cont {
+  width: 100%;
+  height: 60px;
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-logo-cont {
+  margin-left: 6rem;
+  background-color: darkmagenta;
+}
+.nav-functionality-cont {
+  margin-right: 6rem;
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  background-color: crimson;
+}
+.nav-functionality-cont__nav-link {
+  background-color: darkgreen;
+}
