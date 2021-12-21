@@ -10,9 +10,13 @@ const ProductsPage = () => {
     fetch('https://fakestoreapi.com/products')
       .then((response) => response.json())
       .then((response) => {
-        setData(response);
+        let newArr = response.map((elem) => {
+          elem.quantity = 1;
+          return elem;
+        });
+        setData(newArr);
       });
-  });
+  }, []);
 
   return (
     <div className='products-page-cont'>

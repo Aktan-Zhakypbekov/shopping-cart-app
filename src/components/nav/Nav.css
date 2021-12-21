@@ -26,3 +26,7 @@
 .nav-functionality-cont__nav-link {
   background-color: darkgreen;
 }
+.nav-functionality-cont__cart-cont {
+  display: flex;
+  background-color: lime;
+}
