@@ -45,7 +45,7 @@ const CardItem = ({ itemData }) => {
             min='1'
             value={itemInfo.quantity}
             onChange={(e) => {
-              setItemInfo({ ...itemInfo, quantity: e.target.value });
+              setItemInfo({ ...itemInfo, quantity: parseInt(e.target.value) });
             }}
           />
           <button

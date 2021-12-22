@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import './Nav.css';
 import { Link } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import Cart from '../../Cart';
 
 const Nav = () => {
-  const [cartPressed, setCartPressed] = useState(false);
+  const dispatch = useDispatch();
+  let cartPressed = useSelector((state) => state.cartPressed);
 
   let cartItems = useSelector((state) => state.dataReducer2);
 
@@ -38,7 +39,7 @@ const Nav = () => {
           <button
             className='nav-functionality-cont__cart-cont__cart-btn'
             onClick={() => {
-              setCartPressed(true);
+              dispatch({ type: 'CART_PRESSED' });
             }}
           >
             Cart
