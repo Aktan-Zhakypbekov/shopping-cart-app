@@ -7,28 +7,37 @@
 .products-page-cont {
   width: 100%;
   min-height: 660px;
-  background-color: cornflowerblue;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
 
 .list-cont {
+  margin: 1rem;
   margin-top: 2rem;
   width: 80%;
-  background-color: crimson;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
+@media (max-width: 970px) {
+  .list-cont {
+    width: 94%;
+  }
+}
+
 .card-item-cont {
   width: 350px;
-  height: 500px;
-  background-color: cyan;
+  min-height: 525px;
   margin: 1rem;
+  border-radius: 12px;
+  box-shadow: 1px 5px 7px 1px silver;
 }
 .img-cont {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
   width: 100%;
   height: 350px;
   background-color: white;
@@ -36,11 +45,17 @@
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 350px) {
+  .card-item-cont {
+    width: 94%;
+  }
+}
 .img-cont__inner {
   width: 190px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: darkgreen;
 }
 .img-cont__inner__img {
   max-width: 100%;
@@ -48,30 +63,33 @@
 }
 .info-cont {
   width: 100%;
-  height: 65px;
-  background-color: darkgoldenrod;
+  min-height: 90px;
+  background-color: rgb(137, 190, 223);
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: flex-start;
+  color: rgb(43, 14, 14);
 }
 .info-cont__product-name-cont {
-  background-color: darkviolet;
+  margin: 0.2rem;
 }
 .info-cont__product-price-cont {
-  background-color: deeppink;
+  margin: 0.2rem;
+  font-size: 1.1rem;
 }
 .functionality {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
   width: 100%;
   height: 85px;
-  background-color: darkgreen;
+  background-color: rgb(65, 42, 17);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
 .functionality__see-more-btn {
-  background-color: darkolivegreen;
 }
 
 .functionality__add-and-qnty-functionality-cont {
@@ -85,4 +103,16 @@
 }
 .functionality__add-and-qnty-functionality-cont__add-to-cart-btn {
   width: 240px;
+}
+
+@media (max-width: 400px) {
+  .functionality__add-and-qnty-functionality-cont {
+    width: 90%;
+  }
+  .functionality__add-and-qnty-functionality-cont__qnty-input {
+    width: 40px;
+  }
+  .functionality__add-and-qnty-functionality-cont__add-to-cart-btn {
+    flex: 1;
+  }
 }

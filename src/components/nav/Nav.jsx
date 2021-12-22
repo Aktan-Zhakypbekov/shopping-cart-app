@@ -23,13 +23,13 @@ const Nav = () => {
       {cartPressed ? <Cart /> : null}
       <div className='nav-logo-cont'>LOGO</div>
       <div className='nav-functionality-cont'>
-        <Link to='/'>
+        <Link to='/' style={{ textDecoration: 'none' }}>
           <div className='nav-functionality-cont__nav-link'>Homepage</div>
         </Link>
-        <Link to='/productsPage'>
+        <Link to='/productsPage' style={{ textDecoration: 'none' }}>
           <div className='nav-functionality-cont__nav-link'>Products</div>
         </Link>
-        <Link to='/contactsPage'>
+        <Link to='/contactsPage' style={{ textDecoration: 'none' }}>
           <div className='nav-functionality-cont__nav-link'>Contacts</div>
         </Link>
         <div className='nav-functionality-cont__cart-cont'>

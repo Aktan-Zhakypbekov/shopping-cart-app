@@ -7,8 +7,9 @@
 .footer-cont {
   width: 100%;
   height: 40px;
-  background-color: cadetblue;
+  background-color: rgb(26, 14, 3);
   display: flex;
   align-items: center;
   justify-content: center;
+  color: silver;
 }
