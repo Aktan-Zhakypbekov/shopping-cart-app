@@ -11,7 +11,17 @@ const Cart = () => {
   return (
     <div className='cart-cont'>
       {cartChosenItems.length === 0 ? (
-        <div>Empty</div>
+        <div className='empty-cart-cont'>
+          <div className='empty-cart-cont__title'>The Cart is empty</div>
+          <button
+            className='empty-cart-cont__back-btn'
+            onClick={() => {
+              dispatch({ type: 'CART_PRESSED' });
+            }}
+          >
+            Back
+          </button>
+        </div>
       ) : (
         <div className='cart-content'>
           <div className='cart-content__title-cont'>Shopping Cart</div>

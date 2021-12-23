@@ -25,6 +25,7 @@
   background-color: cornsilk;
 }
 .cart-content__title-cont {
+  font-size: 1.4rem;
 }
 
 .cart-content__inventory {
@@ -32,15 +33,41 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: darkblue;
 }
 
 .cart-content__inventory__cart-items-cont {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
   width: 100%;
   height: 500px;
-  background-color: lime;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: auto;
+}
+
+.cart-content__inventory__total-price-cont {
+  font-size: 1.2rem;
+  border-bottom: 1px solid grey;
+}
+
+.empty-cart-cont {
+  width: 40%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .cart-content {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-content {
+    width: 100%;
+  }
 }
